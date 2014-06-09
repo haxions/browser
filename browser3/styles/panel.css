@@ -1,0 +1,60 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial;
+}
+
+body {
+    background-color: #ccc;
+    box-shadow: inset 4px 4px 30px #333;
+}
+
+#tab_list {
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+#tab_list li {
+    list-style-type: none;
+}
+.panel-tabs {
+    display: block;
+    height: 10px;
+    padding: 5px 10px;
+    margin: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #DDD;
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.4);
+    color: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
+}
+
+.panel-tabs:hover {
+    color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BFD9E5), color-stop(0.5,#63B0CF), color-stop(0.5,#0080B3), to(#09C));
+}
+
+.selected-tab {
+    color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#20688A), color-stop(0.5,#3F96B8), color-stop(0.5,#00679A), to(#0081B4));
+}
+
+#add_tab_btn {
+    display: block;
+    padding: 5px 10px;
+    margin: 3px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px dotted #CCC;
+    color: #333;
+    background: #EEE;
+}
+
+#add_tab_btn:hover {
+    color: #FFF;
+    background: #3F96B8;
+}

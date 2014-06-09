@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/browser.css">
+    <script src="scripts/browser.js"></script>
+  <body>
+    <div id="controls">
+
+      <button id="back" title="Go Back">&#9664;</button>
+      <button id="forward" title="Go Forward">&#9654;</button>
+      <button id="home" title="Go Home">&#8962;</button>
+      <button id="reload" title="Reload">&#10227;</button>
+      <button id="terminate" title="Simulate Crash">&#9760;</button>
+
+      <form id="location-form">
+        <div id="center-column">
+          <input id="location" type="text" value="http://www.google.com/">
+        </div>
+        <input type="submit" value="Go">
+      </form>
+
+      <button id="zoom" title="Change Zoom">&#128270;</button>
+      <button id="find" title="Find in Page">&#128294;</button>
+
+    </div>
+
+    <div id="zoom-box">
+      <form id="zoom-form">
+        <input id="zoom-text" type="text">
+        <input type="submit" value="&#128270;">
+        <button id="zoom-in">&#10133;</button>
+        <button id="zoom-out">&#10134;</button>
+      </form>
+    </div>
+
+    <div id="find-box">
+      <form id="find-form">
+        <input id="find-text" type="text">
+        <div id="find-results"></div>
+        <input type="submit" style="position:absolute; visibility:hidden">
+        <button id="match-case">aA</button>
+        <button id="find-backward">&#60;</button>
+        <button id="find-forward">&#62;</button>
+      </form>
+    </div>
+
+    <div id="mainview">
+      <webview id="71d0a92213edc522d0bb308b1c721969" class="selected-view" src="http://www.google.com/"></webview>
+      <webview id="d1c9ccf6ae99c6733cd8c9a4fbd669ee" src="http://www.yahoo.co.jp/"></webview>
+      <webview id="9ed9b42020a04ef6223c1d7b7fbfd01b" src="http://www.bing.com/"></webview>
+    </div>
+
+    <div id="sad-webview">
+      <div id="sad-webview-icon">&#9762;</div>
+      <h2 id="crashed-label">Aw, Snap!</h2>
+      <h2 id="killed-label">He's Dead, Jim!</h2>
+
+      <p>Something went wrong while displaying this webpage.
+      To continue, reload or go to another page.</p>
+    </div>
+    <div id="subview" style="display:none">
+      <webview src="http://www.yahoo.co.jp/" style="width:640px; height:480px"></webview>
+    </div>
+  </body>
+</html>
